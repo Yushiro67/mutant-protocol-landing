@@ -34,7 +34,7 @@ const schedule = [
   { label: "DAY 01", title: "GENESIS", entries: [["09:00", "Arrival & clearance"], ["10:30", "Opening transmission"], ["12:00", "Challenge reveal & squad formation"], ["14:00", "The build begins"], ["19:00", "Mentor checkpoints"]] },
   { label: "DAY 02", title: "THE CRUCIBLE", entries: [["00:00", "Midnight build sprint"], ["09:00", "Fuel up & field check"], ["11:00", "Danger Room coding battles"], ["15:00", "Prototype review"], ["21:00", "Final sprint"]] },
   { label: "DAY 03", title: "ENDGAME", entries: [["08:00", "Submission lock"], ["09:30", "Project showcases"], ["12:00", "Jury deliberation"], ["14:00", "Winners & closing assembly"]] },
-];
+] as const;
 
 const faqs = [
   ["Who can join the initiative?", "Students from any college or university are welcome. Coders, designers, builders, and first-time hackers all belong here."],
