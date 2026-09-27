@@ -108,7 +108,7 @@ function Index() {
           <h1>EVOLVE <span>OR</span><br/>FALL BEHIND<span className="period">.</span></h1>
           <p className="hero-description">A new generation is assembling. 36 hours to build what comes next — for coders, designers, and tech mutants ready to rewrite the future.</p>
           <div className="hero-actions"><Button asChild className="button-primary button-large"><a href="#register">REGISTER YOUR SQUAD <ArrowUpRight/></a></Button><Button variant="outline" className="button-outline button-large" onClick={() => setTeaser(true)}><Play className="fill-current"/> READ THE BRIEF</Button></div>
-          <div className="countdown"><div className="countdown-label"><Radio size={15}/> LAUNCH WINDOW <span>· DATE TO BE CONFIRMED</span></div><div className="countdown-numbers">{(clock ?? [0,0,0,0]).map((v, i) => <div key={i}><strong>{String(v).padStart(2,"0")}</strong><small>{["DAYS", "HOURS", "MIN", "SEC"][i]}</small></div>)}</div></div>
+          <div className="countdown"><div className="countdown-label"><Radio size={15}/> LAUNCH WINDOW <span>· 14 NOV 2026 / PROVISIONAL</span></div><div className="countdown-numbers">{(clock ?? [0,0,0,0]).map((v, i) => <div key={i}><strong>{String(v).padStart(2,"0")}</strong><small>{["DAYS", "HOURS", "MIN", "SEC"][i]}</small></div>)}</div></div>
         </div>
         <div className="hero-bottom wrap"><span>SCROLL TO DECODE THE MISSION</span><ArrowDown size={16}/><span className="hero-coordinates">28°27′ N / 77°35′ E &nbsp; · &nbsp; BENNETT UNIVERSITY</span></div>
       </section>
