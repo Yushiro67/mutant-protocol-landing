@@ -93,6 +93,7 @@ function Index() {
   const currentTrack = tracks[selected] ?? tracks[0];
   const currentDay = schedule[day] ?? schedule[0];
   const modalTrack = modal === null ? null : (tracks[modal] ?? tracks[0]);
+  if (!currentTrack || !currentDay) return null;
 
   return <div className="site-shell">
     <div className={pulse ? "cerebro-wave active" : "cerebro-wave"} aria-hidden="true" />
