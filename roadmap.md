@@ -1,0 +1,3 @@
+- [ ] Restyle the full scrolling event page as the selected comic-book issue.
+- [ ] Preserve registration, dossiers, timeline, FAQ, countdown, and audio interactions.
+- [ ] Verify desktop and mobile rendering and interaction.
