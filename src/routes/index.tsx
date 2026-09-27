@@ -4,11 +4,6 @@ import { ArrowDown, ArrowRight, ArrowUpRight, AudioLines, Check, ChevronDown, Ch
 import { Button } from "@/components/ui/button";
 import { supabase } from "@/integrations/supabase/client";
 import hero from "@/assets/comic-cover.jpg";
-import tech from "@/assets/track-tech.jpg";
-import defense from "@/assets/track-defense.jpg";
-import neural from "@/assets/track-neural.jpg";
-import storm from "@/assets/track-storm.jpg";
-import spatial from "@/assets/track-spatial.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({ meta: [
@@ -23,11 +18,11 @@ export const Route = createFileRoute("/")({
 });
 
 const tracks = [
-  { id: "ai-robotics", code: "01", name: "AI & ROBOTICS", hero: "IRON MAN / TONY STARK", image: tech, accent: "cyan", description: "Build intelligent systems that think, move, and make an impact in the real world.", stack: "Python · PyTorch · ROS · OpenCV", prize: "Track distinction + prize pool eligibility" },
-  { id: "cybersecurity", code: "02", name: "CYBERSECURITY", hero: "WOLVERINE / LOGAN", image: defense, accent: "crimson", description: "Defend tomorrow's digital world. Find vulnerabilities and engineer resilient systems.", stack: "Kali Linux · Burp Suite · Wireshark · Rust", prize: "Track distinction + prize pool eligibility" },
-  { id: "neural", code: "03", name: "NEURAL INTERFACES", hero: "PROFESSOR X / JEAN GREY", image: neural, accent: "violet", description: "Decode human-machine interaction through neural networks and brain-computer interfaces.", stack: "TensorFlow · MNE · Python · EEG", prize: "Track distinction + prize pool eligibility" },
-  { id: "cloud", code: "04", name: "CLOUD & COMPUTE", hero: "THOR / STORM", image: storm, accent: "cyan", description: "Architect systems with the scale and force to withstand any storm.", stack: "AWS · Kubernetes · Docker · Go", prize: "Track distinction + prize pool eligibility" },
-  { id: "spatial", code: "05", name: "SPATIAL COMPUTING", hero: "SCARLET WITCH / DOCTOR STRANGE", image: spatial, accent: "amber", description: "Bend the boundaries of reality with immersive web, AR/VR, and decentralized experiences.", stack: "Three.js · Unity · Solidity · WebXR", prize: "Track distinction + prize pool eligibility" },
+  { id: "ai-robotics", code: "01", name: "AI & ROBOTICS", hero: "IRON MAN / TONY STARK", accent: "cyan", description: "Build intelligent systems that think, move, and make an impact in the real world.", stack: "Python · PyTorch · ROS · OpenCV", prize: "Track distinction + prize pool eligibility" },
+  { id: "cybersecurity", code: "02", name: "CYBERSECURITY", hero: "WOLVERINE / LOGAN", accent: "crimson", description: "Defend tomorrow's digital world. Find vulnerabilities and engineer resilient systems.", stack: "Kali Linux · Burp Suite · Wireshark · Rust", prize: "Track distinction + prize pool eligibility" },
+  { id: "neural", code: "03", name: "NEURAL INTERFACES", hero: "PROFESSOR X / JEAN GREY", accent: "violet", description: "Decode human-machine interaction through neural networks and brain-computer interfaces.", stack: "TensorFlow · MNE · Python · EEG", prize: "Track distinction + prize pool eligibility" },
+  { id: "cloud", code: "04", name: "CLOUD & COMPUTE", hero: "THOR / STORM", accent: "cyan", description: "Architect systems with the scale and force to withstand any storm.", stack: "AWS · Kubernetes · Docker · Go", prize: "Track distinction + prize pool eligibility" },
+  { id: "spatial", code: "05", name: "SPATIAL COMPUTING", hero: "SCARLET WITCH / DOCTOR STRANGE", accent: "amber", description: "Bend the boundaries of reality with immersive web, AR/VR, and decentralized experiences.", stack: "Three.js · Unity · Solidity · WebXR", prize: "Track distinction + prize pool eligibility" },
 ] as const;
 
 const schedule = [

@@ -79,12 +79,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "MUTANT PROTOCOL: The Bennett Initiative" },
       { name: "description", content: "A 36-hour hackathon and tech summit at Bennett University." },
-      { name: "author", content: "Lovable" },
+      { name: "author", content: "GeeksForGeeks Student Chapter, Bennett University" },
       { property: "og:title", content: "MUTANT PROTOCOL: The Bennett Initiative" },
       { property: "og:description", content: "A 36-hour hackathon and tech summit at Bennett University." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
       {
